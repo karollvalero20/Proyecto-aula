@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar h2 {
+    margin: 0;
+    color: black;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar ul li a:hover {
+    color: white;
+}
+
+/* CONTENIDO GENERAL */
+.contenido {
+    color: white;
+    padding: 40px;
+}
+
+/* LOGIN */
+.login-contenedor {
+    width: 300px;
+    margin: 120px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.boton-azul {
+    background-color: #2d89ef;
+    color: white;
+}
+
+.boton-gris {
+    background-color: #e0e0e0;
+}
+
+/* TARJETAS MENU */
+.tarjetas {
+    display: flex;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.tarjeta h3 {
+    margin: 0;
+    font-size: 16px;
+    color: gray;
+}
+
+.tarjeta p {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* TABLA INGRESOS */
+.tabla {
+    width: 80%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+
+.tabla th, .tabla td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
