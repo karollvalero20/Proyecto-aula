@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registro</title>
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="registro-body">
+
+<div class="registro-card">
+
+<h2>Crear Cuenta</h2>
+
+<form onsubmit="registrar(event)">
+
+<label>Cédula</label>
+<input id="cedula" type="text" required>
+
+<label>Nombre</label>
+<input id="nombre" type="text" required>
+
+<label>Contraseña</label>
+<input id="password" type="password" required>
+
+<label>Confirmar Contraseña</label>
+<input id="confirmar" type="password" required>
+
+<button class="boton-registro">Crear Cuenta</button>
+
+<a href="index.html" class="volver-login">
+Volver al login
+</a>
+
+</form>
+
+</div>
+
+<script>
+
+function registrar(event){
+
+event.preventDefault();
+
+let cedula = document.getElementById("cedula").value;
+let password = document.getElementById("password").value;
+let confirmar = document.getElementById("confirmar").value;
+
+if(password !== confirmar){
+alert("Las contraseñas no coinciden");
+return;
+}
+
+localStorage.setItem("cedula", cedula);
+localStorage.setItem("password", password);
+
+alert("Registro exitoso");
+
+window.location.href = "index.html";
+
+}
+
+</script>
+
+</body>
+</html>

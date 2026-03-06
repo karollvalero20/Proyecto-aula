@@ -1,3 +1,7 @@
+/* ============================= */
+/* CONFIGURACIÓN GENERAL */
+/* ============================= */
+
 html, body {
     height: 100%;
     margin: 0;
@@ -11,6 +15,10 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
 
 .navbar {
     background-color: white;
@@ -44,10 +52,18 @@ body {
     color: blueviolet;
 }
 
+/* ============================= */
+/* CONTENIDO GENERAL */
+/* ============================= */
+
 .contenido {
     color: white;
     padding: 40px;
 }
+
+/* ============================= */
+/* TARJETAS */
+/* ============================= */
 
 .tarjetas {
     display: flex;
@@ -76,23 +92,22 @@ body {
     color: gray;
 }
 
-.tarjeta p {
-    margin: 8px 0;
-}
-
 .valor {
     font-size: 20px;
     font-weight: bold;
 }
 
-
 .ingreso {
-    color: #28a745; /* Verde */
+    color: #28a745;
 }
 
 .gasto {
-    color: #d9534f; /* Rojo */
+    color: #d9534f;
 }
+
+/* ============================= */
+/* LOGIN */
+/* ============================= */
 
 .login-body {
     display: flex;
@@ -101,7 +116,6 @@ body {
     height: 100vh;
 }
 
-/* Tarjeta login */
 .login-card {
     background-color: rgba(255, 255, 255, 0.95);
     padding: 40px;
@@ -113,7 +127,6 @@ body {
 
 .login-card h2 {
     margin-bottom: 20px;
-    color: #333;
 }
 
 .login-card form {
@@ -125,7 +138,6 @@ body {
     text-align: left;
     margin-top: 10px;
     font-weight: bold;
-    color: #555;
 }
 
 .login-card input {
@@ -144,9 +156,72 @@ body {
     color: white;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s ease;
 }
 
 .boton-login:hover {
     background-color: darkviolet;
+}
+
+.boton-registro-link {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+/* ============================= */
+/* REGISTRO */
+/* ============================= */
+
+.registro-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.registro-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.registro-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registro-card label {
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.registro-card input {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.boton-registro {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.volver-login {
+    margin-top: 15px;
+    display: block;
+    text-decoration: none;
+    color: #444;
 }

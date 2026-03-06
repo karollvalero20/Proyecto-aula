@@ -1,25 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
-    <link rel="stylesheet" href="css/estilos.css">
+<title>Login</title>
+<link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body class="login-body">
 
-    <div class="login-card">
-        <h2>Iniciar Sesión</h2>
+<div class="login-card">
 
-        <form action="menu.html">
-            <label>Usuario</label>
-            <input type="text" required>
+<h2>Iniciar Sesión</h2>
 
-            <label>Contraseña</label>
-            <input type="password" required>
+<form onsubmit="login(event)">
 
-            <button type="submit" class="boton-login">Ingresar</button>
-        </form>
-    </div>
+<label>Cédula</label>
+<input id="cedula" type="text" required>
+
+<label>Contraseña</label>
+<input id="password" type="password" required>
+
+<button class="boton-login">Ingresar</button>
+
+</form>
+
+<a href="registro.html" class="boton-registro-link">
+Crear una cuenta
+</a>
+
+</div>
+
+<script>
+
+function login(event){
+
+event.preventDefault();
+
+let cedula = document.getElementById("cedula").value;
+let password = document.getElementById("password").value;
+
+let cedulaGuardada = localStorage.getItem("cedula");
+let passwordGuardada = localStorage.getItem("password");
+
+if(cedula === cedulaGuardada && password === passwordGuardada){
+
+window.location.href = "menu.html";
+
+}else{
+
+alert("Usuario o contraseña incorrectos");
+
+}
+
+}
+
+</script>
 
 </body>
 </html>
